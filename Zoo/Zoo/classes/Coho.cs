@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class Coho
+    class Coho : Salmon
     {
     }
 }
