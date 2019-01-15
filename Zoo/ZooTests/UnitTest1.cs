@@ -117,5 +117,20 @@ namespace ZooTests
             Assert.Equal("Lacewing Fly", pinkSalmon.favoriteBug);
         }
 
+        //PolyMorphism
+        [Fact]
+        public void GreyWolvesAreAnimals()
+        {
+            GreyWolf greyWolf = new GreyWolf();
+            bool TestMethod(Animal animal){
+                if (animal != null)
+                {
+                    return true;
+                }
+                else return false;
+            }
+            Assert.True(TestMethod(greyWolf));
+        }
+
     }
 }
