@@ -27,7 +27,13 @@ namespace Zoo
 
             IRun bBear = new BlackBear();
             Console.WriteLine(bBear.TopSpeed);
+
             Console.WriteLine(greyWolf.Run());
+            Console.WriteLine(pinkSalmon.EatsBugs());
+            Console.WriteLine(pinkSalmon.favoriteBug);
+            Console.WriteLine(blackBear.favoriteBug);
+            Console.WriteLine(blackBear.EatsBugs());
+
         }
     }
 }
