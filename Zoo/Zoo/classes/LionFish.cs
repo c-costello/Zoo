@@ -13,17 +13,17 @@ namespace Zoo.classes
 
         public override string Eat()
         {
-            return $"Eats {Diet}";
+            return "Eats smaller fish";
         }
 
         public override string Sleep()
         {
-            return $"Sleeps in the {Habitat}";
+            return "Sleeps in the ocean";
         }
 
         public override string Swim()
         {
-            return $"Swims in {WaterType} water";
+            return "Swims in salt water";
         }
     }
 }
