@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    abstract class Salmon : Fish
+    public abstract class Salmon : Fish
     {
 
         public virtual int RunCycleYears { get => RunCycleYears; set => RunCycleYears = 1;} 

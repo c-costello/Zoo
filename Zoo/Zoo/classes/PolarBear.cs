@@ -4,41 +4,41 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class PolarBear : Bear
+    public class PolarBear : Bear
     {
         public override bool Omnivore { get => base.Omnivore; set => base.Omnivore = false; }
         public override int LitterSize { get => LitterSize; set => LitterSize = 2; }
         public override string Habitat { get => Habitat; set => Habitat = "Artic"; }
         public override string Diet { get => Diet; set => Diet = "Seals"; }
 
-        public override void Fish()
+        public override string Fish()
         {
-            base.Fish();
+            return base.Fish();
         }
 
-        public override void Nurse()
+        public override string Nurse()
         {
-            base.Nurse();
+            return base.Nurse();
         }
 
-        public override void Play()
+        public override string Play()
         {
-            base.Play();
+            return base.Play();
         }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Eat");
+            return $"Eats {Diet}";
         }
 
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("Sleep");
+            return "Sleeps in snow banks";
         }
 
-        public void Swim()
+        public string Swim()
         {
-            Console.WriteLine("Swim");
+           return $"Swims in the {Habitat}";
         }
 
     }

@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    abstract class Mammal : Animal
+    public abstract class Mammal : Animal
     {
         abstract public int LitterSize { get; set; }
         virtual public bool LivesInGroups { get; set; }
 
-        virtual public void Nurse()
+        virtual public string Nurse()
         {
-            Console.WriteLine("Nursing");
+            return "Nursing";
         }
 
 

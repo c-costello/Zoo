@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class PinkSalmon : Salmon
+    public class PinkSalmon : Salmon
     {
         public bool HasHump { get => HasHump; set => HasHump = true;}
 

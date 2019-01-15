@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class LionFish : Fish
+    public class LionFish : Fish
     {
         public override string WaterType { get => WaterType; set => WaterType = "Salt"; }
         public override int NumberOfGills { get => NumberOfGills; set => NumberOfGills = 4; }

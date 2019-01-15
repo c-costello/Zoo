@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class GreyWolf : Mammal
+    public class GreyWolf : Mammal
     {
 
         
@@ -18,19 +18,19 @@ namespace Zoo.classes
         public override int LitterSize { get => LitterSize; set => LitterSize = 4; }
         public override bool LivesInGroups { get => LivesInGroups; set => LivesInGroups = true; }
 
-        public override void Nurse()
+        public override string Nurse()
         {
-            Console.WriteLine("Nurse");
+            return "Nurses pups";
         }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Eat");
+            return $"Eats {Diet}";
         }
 
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("Sleep");
+            return $"Sleeps in the {Habitat}";
         }
     }
     

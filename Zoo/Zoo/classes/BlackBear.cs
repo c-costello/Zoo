@@ -4,28 +4,28 @@ using System.Text;
 
 namespace Zoo.classes
 {
-    class BlackBear : Bear
+    public class BlackBear : Bear
     {
         public override int LitterSize { get => LitterSize; set => LitterSize = 3; }
         public override string Habitat { get => Habitat; set => Habitat = "Forest"; }
         public override string Diet { get => Diet; set => Diet = "Fruits, roots, bugs and small game"; }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Eat");
+            return $"Eats {Diet}";
         }
 
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("Sleep");
+            return "Sleeps in caves";   
         }
-        public override void Nurse()
+        public override string Nurse()
         {
-            base.Nurse();
+            return base.Nurse();
         }
-        public void Climb()
+        public string Climb()
         {
-            Console.WriteLine("Climb");
+            return "Climbs trees";
         }
 
 

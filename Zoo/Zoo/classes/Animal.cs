@@ -9,11 +9,11 @@ namespace Zoo.classes
         abstract public string Habitat { get; set; }
         abstract public string Diet { get; set; }
 
-        abstract public void Sleep();
-        abstract public void Eat();
-        virtual public void Play()
+        abstract public string Sleep();
+        abstract public string Eat();
+        virtual public string Play()
         {
-            Console.WriteLine("Plays with friends");
+            return "Plays with friends";
         }
 
     }
