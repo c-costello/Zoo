@@ -30,7 +30,7 @@ namespace Zoo.classes
 
         public override string Sleep()
         {
-            return $"Sleeps in the {Habitat}";
+            return "Sleeps in the forest";
         }
     }
     

@@ -37,6 +37,19 @@ namespace ZooTests
             Assert.Equal("Eats Seals", newPolarBear.Eat());
         }
 
+        //wolves
+        [Fact]
+        public void WolvesInheritSleep()
+        {
+            GreyWolf greyWolf = new GreyWolf();
+            Assert.Equal("Sleeps in the forest", greyWolf.Sleep());
+        }
+        [Fact]
+        public void WolvesInheritNurse()
+        {
+            GreyWolf greyWolf = new GreyWolf();
+            Assert.Equal("Nurses pups", greyWolf.Nurse());
+        }
 
 
     }
