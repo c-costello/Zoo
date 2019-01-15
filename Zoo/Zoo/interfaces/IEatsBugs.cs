@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Zoo.interfaces
 {
-    interface ISwim
+    interface IEatsBugs
     {
-        string Swim();
-        bool LikesSplashing;
+        string EatsBugs();
+        string favoriteBug { get; set; }
     }
 }
