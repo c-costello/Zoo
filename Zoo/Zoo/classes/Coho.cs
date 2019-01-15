@@ -10,7 +10,7 @@ namespace Zoo.classes
 
         public override string Eat()
         {
-            return $"Eats {Diet}";
+            return $"Eats herring";
         }
 
         public override string Migrate()
@@ -20,12 +20,12 @@ namespace Zoo.classes
 
         public override string Sleep()
         {
-            return $"Sleeps in the {Habitat}";
+            return $"Sleeps in the water";
         }
 
         public override string Swim()
         {
-            return $"Swims in the {Habitat}";
+            return $"Swims in the water";
         }
 
         public string Jump()

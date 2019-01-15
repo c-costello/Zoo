@@ -67,6 +67,20 @@ namespace ZooTests
         
         }
 
+        //Coho 
+        [Fact]
+        public void CohoInheritMigrate()
+        {
+            Coho coho = new Coho();
+            Assert.Equal("Migrates from the ocean to the rivers", coho.Migrate());
+        }
+        [Fact]
+        public void CohoInheritSleep()
+        {
+            Coho coho = new Coho();
+            Assert.Equal("Sleeps in the water", coho.Sleep());
+        }
+
 
     }
 }
