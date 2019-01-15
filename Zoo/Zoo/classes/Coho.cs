@@ -8,29 +8,29 @@ namespace Zoo.classes
     {
         public override string Habitat { get => Habitat; set => Habitat = "Streams and Ocean"; }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Eat");
+            return $"Eats {Diet}";
         }
 
-        public override void Migrate()
+        public override string Migrate()
         {
-            Console.WriteLine("Migrate");
+            return "Migrates from the ocean to the rivers";
         }
 
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("Sleep");
+            return $"Sleeps in the {Habitat}";
         }
 
-        public override void Swim()
+        public override string Swim()
         {
-            Console.WriteLine("Swim");
+            return $"Swims in the {Habitat}";
         }
 
-        public void Jump()
+        public string Jump()
         {
-            Console.WriteLine("Jump");
+            return "Jumps out of the water to play and feed";
         }
     }
 }

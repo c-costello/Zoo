@@ -15,6 +15,5 @@ namespace Zoo.classes
         {
             return "Plays with friends";
         }
-
     }
 }

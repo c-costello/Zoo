@@ -12,6 +12,6 @@ namespace Zoo.classes
         public override string WaterType { get => WaterType; set => WaterType = "Fresh/Salt"; }
         public override int NumberOfGills { get => NumberOfGills; set => NumberOfGills = 2; }
 
-        public abstract void Migrate();
+        public abstract string Migrate();
     }
 }

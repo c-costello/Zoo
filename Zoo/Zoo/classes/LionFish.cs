@@ -11,19 +11,19 @@ namespace Zoo.classes
         public override string Habitat { get => Habitat; set => Habitat = "Ocean"; }
         public override string Diet { get => Diet; set => Diet = "Smaller Fish"; }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("Speak");
+            return $"Eats {Diet}";
         }
 
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("Sleep");
+            return $"Sleeps in the {Habitat}";
         }
 
-        public override void Swim()
+        public override string Swim()
         {
-            Console.WriteLine("Swim");
+            return $"Swims in {WaterType} water";
         }
     }
 }

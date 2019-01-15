@@ -9,6 +9,6 @@ namespace Zoo.classes
         abstract public string WaterType { get; set; }
         abstract public int NumberOfGills { get; set; }
 
-        abstract public void Swim();
+        abstract public string Swim();
     }
 }
