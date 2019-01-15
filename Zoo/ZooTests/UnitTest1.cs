@@ -80,7 +80,19 @@ namespace ZooTests
             Coho coho = new Coho();
             Assert.Equal("Sleeps in the water", coho.Sleep());
         }
-
+        //pink salmon
+        [Fact]
+        public void PinkSalmonInheritEat()
+        {
+            PinkSalmon pinkSalmon = new PinkSalmon();
+            Assert.Equal("Eats herring", pinkSalmon.Eat());
+        }
+        [Fact]
+        public void PinkSalmonInheritSwim()
+        {
+            PinkSalmon pinkSalmon = new PinkSalmon();
+            Assert.Equal("Swims in salt/fresh water", pinkSalmon.Swim());
+        }
 
     }
 }

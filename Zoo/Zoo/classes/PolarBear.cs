@@ -38,7 +38,7 @@ namespace Zoo.classes
 
         public string Swim()
         {
-           return $"Swims in the {Habitat}";
+           return $"Swims in the artic";
         }
 
     }

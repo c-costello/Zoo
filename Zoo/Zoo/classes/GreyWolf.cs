@@ -25,7 +25,7 @@ namespace Zoo.classes
 
         public override string Eat()
         {
-            return $"Eats {Diet}";
+            return $"Eats game";
         }
 
         public override string Sleep()
