@@ -122,14 +122,7 @@ namespace ZooTests
         public void GreyWolvesAreAnimals()
         {
             GreyWolf greyWolf = new GreyWolf();
-            bool TestMethod(Animal animal){
-                if (animal != null)
-                {
-                    return true;
-                }
-                else return false;
-            }
-            Assert.True(TestMethod(greyWolf));
+            Assert.IsAssignableFrom<Animal>(greyWolf);
         }
 
     }
