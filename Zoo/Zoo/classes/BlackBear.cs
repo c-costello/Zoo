@@ -10,7 +10,7 @@ namespace Zoo.classes
         public override int LitterSize { get => LitterSize; set => LitterSize = 3; }
         public override string Habitat { get => Habitat; set => Habitat = "Forest"; }
         public override string Diet { get => Diet; set => Diet = "Fruits, roots, bugs and small game"; }
-        public int TopSpeed { get; set; } = 35;
+        public int TopSpeed { get; set; } = 25;
 
         public override string Eat()
         {

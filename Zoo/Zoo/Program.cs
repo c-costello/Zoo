@@ -27,6 +27,7 @@ namespace Zoo
 
             IRun bBear = new BlackBear();
             Console.WriteLine(bBear.TopSpeed);
+            Console.WriteLine(greyWolf.Run());
         }
     }
 }
