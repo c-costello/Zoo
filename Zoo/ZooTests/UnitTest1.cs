@@ -110,5 +110,12 @@ namespace ZooTests
             Assert.Equal("Runs Really Fast", blackBear.Run());
         }
 
+        [Fact]
+        public void PinkSalmonEatBugs()
+        {
+            PinkSalmon pinkSalmon = new PinkSalmon();
+            Assert.Equal("Lacewing Fly", pinkSalmon.favoriteBug);
+        }
+
     }
 }
