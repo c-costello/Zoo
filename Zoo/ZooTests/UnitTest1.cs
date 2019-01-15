@@ -94,5 +94,15 @@ namespace ZooTests
             Assert.Equal("Swims in salt/fresh water", pinkSalmon.Swim());
         }
 
+
+        // interface tests
+        [Fact]
+        public void BlackBearsEatBugs()
+        {
+            BlackBear blackBear = new BlackBear();
+            Assert.Equal("Digs up beetles to eat!", blackBear.EatsBugs());
+        }
+
+
     }
 }

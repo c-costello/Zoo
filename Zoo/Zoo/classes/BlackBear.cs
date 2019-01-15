@@ -38,7 +38,7 @@ namespace Zoo.classes
 
         public string EatsBugs()
         {
-            return "Digs up beetles to eat!"
+            return "Digs up beetles to eat!";
         }
     }
 }
