@@ -103,6 +103,12 @@ namespace ZooTests
             Assert.Equal("Digs up beetles to eat!", blackBear.EatsBugs());
         }
 
+        [Fact]
+        public void BlackBearsRun()
+        {
+            BlackBear blackBear = new BlackBear();
+            Assert.Equal("Runs Really Fast", blackBear.Run());
+        }
 
     }
 }
