@@ -6,7 +6,7 @@ namespace Zoo.classes
 {
     public class PolarBear : Bear
     {
-        public override bool Omnivore { get => base.Omnivore; set => base.Omnivore = false; }
+        public override bool Omnivore { get => Omnivore; set => Omnivore = false; }
         public override int LitterSize { get => LitterSize; set => LitterSize = 2; }
         public override string Habitat { get => Habitat; set => Habitat = "Artic"; }
         public override string Diet { get => Diet; set => Diet = "Seals"; }
@@ -28,7 +28,7 @@ namespace Zoo.classes
 
         public override string Eat()
         {
-            return $"Eats {Diet}";
+            return $"Eats Seals";
         }
 
         public override string Sleep()
