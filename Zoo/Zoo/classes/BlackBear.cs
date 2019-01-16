@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.interfaces;
 
 namespace Zoo.classes
 {
-    public class BlackBear : Bear
+    public class BlackBear : Bear , IRun , IEatsBugs
     {
         public override int LitterSize { get => LitterSize; set => LitterSize = 3; }
         public override string Habitat { get => Habitat; set => Habitat = "Forest"; }
         public override string Diet { get => Diet; set => Diet = "Fruits, roots, bugs and small game"; }
+        public int TopSpeed { get; set; } = 25;
+        public string favoriteBug { get; set; } = "Beetles";
 
         public override string Eat()
         {
@@ -28,6 +31,14 @@ namespace Zoo.classes
             return "Climbs trees";
         }
 
+        public string Run()
+        {
+            return "Runs Really Fast";
+        }
 
+        public string EatsBugs()
+        {
+            return "Digs up beetles to eat!";
+        }
     }
 }
